@@ -6,9 +6,9 @@ import utils_data
 import wandb
 
 import torch
-from torch import nn, optim
+from torch import optim
 
-from torch.utils.data import DataLoader, Subset
+from torch.utils.data import DataLoader
 import torch.nn.functional as F
 
 import vision_transformer as vits
@@ -89,8 +89,6 @@ if not os.path.exists(save_folder):
     os.makedirs(save_folder)
 
 train_dataset, val_dataset = utils_data.load_my_dataset_not_augment(args)
-# train_dataset = Subset(train_dataset, list(range(10 * args.batch_size)))
-# val_dataset = Subset(val_dataset, list(range(10 * args.batch_size)))
 
 train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, num_workers=8)
 val_loader = DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False, num_workers=8)

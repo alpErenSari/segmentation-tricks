@@ -1,0 +1,9 @@
+einops
+h5py
+numpy
+opencv_python
+Pillow
+pycocotools
+PyYAML
+tqdm
+wget
