@@ -163,8 +163,8 @@ args.z_chunk_size = model.model_dino.embed_dim * args.n_last_blocks
 
 if args.wandb_off:
     os.environ['WANDB_MODE'] = 'offline'
-# TODO: do not forget to remove entity
-wandb.init(project='dino', name=args.experiment_name, config=args, entity='aesari')
+# set project and entity to log into wandb
+wandb.init(project='', name=args.experiment_name, config=args, entity='')
 
 segmenter = segmenterNetRGB(args.z_chunk_size, args.num_segments, 64, patch_size=args.patch_size)
 
