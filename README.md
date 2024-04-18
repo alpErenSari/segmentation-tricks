@@ -1,6 +1,8 @@
 # Two Tricks to Improve Unsupervised Segmentation Learning
+Source code for [Two Tricks to Improve Unsupervised Segmentation Learning
+](https://arxiv.org/abs/2404.03392).
 ## Dependencies
-This code depends on pytorch. Visit [pytorch website](https://pytorch.org/get-started/locally/) to 
+This implementation depends on pytorch. Visit [pytorch website](https://pytorch.org/get-started/locally/) to 
 get the latest version. Use the following command for additional requirements
 
 ```
@@ -33,3 +35,12 @@ Change *--dataset* to *duts*, *dut-omron*, or *ecssd*
 python sempart_main.py --batch_size=8 --img_size=320 --dataset=duts 
 --patch_size=8 --use_keys --ckpt_segmenter_path=path/to/segmentation/head
 ```
+
+## Pretained Models
+You can download the Sempart model trained with 
+
+| MODEL                              |                                                                                            |
+|------------------------------------|--------------------------------------------------------------------------------------------|
+| Sempart                            | [Link](https://drive.google.com/file/d/1d8HpA-8kCKC1V7aJxh4ayFXzzSOcSjFU/view?usp=sharing)                                                                                   |
+| Sempart w/ Multi-Scale consistency | [Link](https://drive.google.com/file/d/1GsFCI9mF3p7HdyFZsgPLBIJcZsCRSV-e/view?usp=sharing) |
+
