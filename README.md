@@ -9,7 +9,7 @@ get the latest version. Use the following command for additional requirements
 pip install -r requirements.txt
 ```
 
-## Traininig
+## Training
 To train the baseline on duts run the command.
 ```
 python sempart_main.py --batch_size=8 --lr=1e-4 --img_size=320 --weight_entropy=1 
