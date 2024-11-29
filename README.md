@@ -1,6 +1,5 @@
 # Two Tricks to Improve Unsupervised Segmentation Learning
-Source code for [Two Tricks to Improve Unsupervised Segmentation Learning
-](https://arxiv.org/abs/2404.03392).
+Source code for [Boosting Unsupervised Segmentation Learning](https://arxiv.org/abs/2404.03392).
 ## Dependencies
 This implementation depends on pytorch. Visit [pytorch website](https://pytorch.org/get-started/locally/) to 
 get the latest version. Use the following command for additional requirements
